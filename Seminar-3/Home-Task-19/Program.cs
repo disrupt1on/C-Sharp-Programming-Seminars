@@ -16,8 +16,8 @@ void PrintPalindromeCheck(int number)
     else
     {
         int secondNumeral = number % 10000;
-        int forthNumeral = (secondNumeral / 10) % 10;
-        if (secondNumeral == forthNumeral)
+        int fourthNumeral = (secondNumeral / 10) % 10;
+        if (secondNumeral == fourthNumeral)
         {
             Console.Write("Введённое число является полиндромом");
         }
