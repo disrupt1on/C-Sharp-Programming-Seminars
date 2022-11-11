@@ -3,10 +3,10 @@
 double getElementMin(double[] array)
 {
     double elementMin = array[0];
-    for(int i = 0; i < array.Length; i++ )
+    for (int i = 0; i < array.Length; i++ )
     {
         
-        if(array[i] < elementMin)
+        if (array[i] < elementMin)
         {
             elementMin = array[i];
         }
@@ -17,9 +17,9 @@ double getElementMin(double[] array)
 double getElementMax(double[] array)
 {
     double elementMax = array[0];
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        if(array[i] > elementMax)
+        if (array[i] > elementMax)
         {
             elementMax = array[i];
         }
@@ -28,7 +28,7 @@ double getElementMax(double[] array)
 }
 
 double[] array = new double[arraySize];
-for(int i = 0; i < array.Length; i++)
+for (int i = 0; i < array.Length; i++)
 {
     array[i] = new Random().NextDouble() * 100;
     Console.Write(array[i] + " ");
