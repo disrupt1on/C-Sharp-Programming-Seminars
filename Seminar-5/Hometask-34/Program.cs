@@ -17,10 +17,16 @@ int GetNumbersQuantity(int[] array)
 Console.Write("Введите число (размер массива): ");
 int number = Convert.ToInt32(Console.ReadLine());
 
+Console.Write("Введите начало числового диапазона(трёхзначное число): ");
+int numberAreaStart = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите конец числового диапазона (трёхзначное число, должно быть > начального): ");
+int numberAreaEnd = Convert.ToInt32(Console.ReadLine());
+
 int[] array = new int[number];
 for(int i = 0; i < array.Length; i++)
 {
-    array[i] = new Random().Next(100, 1000);
+    array[i] = new Random().Next(numberAreaStart, numberAreaEnd);
     Console.Write(array[i] + " ");
 }
 
